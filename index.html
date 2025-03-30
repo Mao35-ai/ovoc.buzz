@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OvO - Play the Addictive Online Game | Free to Play</title>
+    <meta name="description" content="Play OvO, the addictive online game that challenges your reflexes and strategy. Experience smooth gameplay, beautiful graphics, and endless entertainment.">
+    <link rel="canonical" href="https://ovoc.buzz" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <script>
+        // Add error handling for resource loading
+        window.addEventListener('error', function(e) {
+            console.error('Resource loading error:', e.target.src || e.target.href);
+        });
+    </script>
+</head>
+<body class="bg-gradient-to-b from-gray-50 to-white">
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-3xl font-bold text-gray-900">OvO</h1>
+                <div class="space-x-4">
+                    <a href="#game" class="text-gray-600 hover:text-gray-900">Play Now</a>
+                    <a href="#about" class="text-gray-600 hover:text-gray-900">About</a>
+                    <a href="#features" class="text-gray-600 hover:text-gray-900">Features</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-4 py-16 text-center">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Experience the Thrill of OvO</h2>
+        <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">Dive into the world of OvO, where strategy meets excitement in this addictive online game that will keep you coming back for more.</p>
+        <button id="playButton" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition duration-300">Play Now</button>
+    </section>
+
+    <!-- Game Section -->
+    <section id="game" class="container mx-auto px-4 py-12 hidden">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="aspect-w-16 aspect-h-9">
+                <iframe 
+                    id="gameFrame"
+                    src="" 
+                    class="w-full h-[600px] md:h-[700px]"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto px-4 py-16 bg-gray-50">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">About OvO</h2>
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Game Overview</h3>
+                <p class="text-gray-600 mb-4">OvO is an engaging online game that combines strategic thinking with quick reflexes. Players navigate through challenging levels, solve puzzles, and compete for high scores.</p>
+                <p class="text-gray-600">The game features smooth controls, intuitive gameplay mechanics, and a clean, modern interface that works seamlessly across all devices.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Key Features</h3>
+                <ul class="space-y-2 text-gray-600">
+                    <li>• Responsive design for all devices</li>
+                    <li>• Smooth gameplay experience</li>
+                    <li>• Progressive difficulty levels</li>
+                    <li>• Global leaderboard system</li>
+                    <li>• Regular updates and new content</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Why Choose OvO?</h2>
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div class="text-center p-6 bg-white rounded-lg shadow-sm">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Cross-Platform</h3>
+                <p class="text-gray-600">Play seamlessly on desktop, tablet, or mobile devices with optimized controls for each platform.</p>
+            </div>
+            <div class="text-center p-6 bg-white rounded-lg shadow-sm">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Free to Play</h3>
+                <p class="text-gray-600">Enjoy the full game experience without any cost. No hidden fees or in-app purchases required.</p>
+            </div>
+            <div class="text-center p-6 bg-white rounded-lg shadow-sm">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Regular Updates</h3>
+                <p class="text-gray-600">Stay engaged with new levels, features, and improvements added regularly to enhance your gaming experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400">© 2024 OvO Game. All rights reserved. | <a href="https://ovoc.buzz" class="text-gray-400 hover:text-white">ovoc.buzz</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('playButton').addEventListener('click', function() {
+            const gameSection = document.getElementById('game');
+            const gameFrame = document.getElementById('gameFrame');
+            
+            // Show the game section
+            gameSection.classList.remove('hidden');
+            
+            // Set the iframe source
+            gameFrame.src = 'https://xfrapo.github.io/projectroyal/projects/ovo/index.html';
+            
+            // Scroll to the game section
+            gameSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html> 
